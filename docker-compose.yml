@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ai-smart-traffic:
+    build: .
+    container_name: ai_smart_traffic_system
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./data/db/traffic.db
+      - DEBUG=True
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped

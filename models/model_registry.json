@@ -1,0 +1,27 @@
+{
+  "current_model": {
+    "name": "TrafficPredictor-v2.1",
+    "version": "v2.1",
+    "weights_file": "models/lstm_traffic_weights.json",
+    "trained_at": "2026-08-23T14:18:01.417344",
+    "metrics": {
+      "mae": 5.55,
+      "rmse": 7.02,
+      "mape": 11.51,
+      "r2_score": 0.94,
+      "sample_count": 2017
+    },
+    "status": "production"
+  },
+  "previous_model": {
+    "name": "TrafficPredictor-v2.0-baseline",
+    "version": "v2.0",
+    "metrics": {
+      "mae": 3.85,
+      "rmse": 5.12,
+      "mape": 9.4,
+      "r2_score": 0.885
+    },
+    "status": "archived"
+  }
+}
